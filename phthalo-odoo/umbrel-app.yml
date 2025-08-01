@@ -1,0 +1,36 @@
+manifestVersion: 1
+id: phthalo-odoo
+name: Odoo Community
+tagline: La version communautaire et opensource de Odoo (Ancienement OpenERP)
+icon: https://images.ctfassets.net/z2yjrn4ew0rg/4Oe0OIyd8FdQSUn5twxMfD/f59ae5ab2f92978fccd920aefcfddc53/odoo.png?w=800
+category: Finance
+version: "18"
+port: 8069
+description: >-
+  Odoo, formerly known as OpenERP, is a suite of open-source business apps written in Python
+  and released under the LGPL license.
+
+
+  IMPORTANT: PLEASE USE ANYTHING BUT "postgres" AS THE DATABASE NAME.
+
+
+  This suite of applications covers all business needs, from Website/Ecommerce down to manufacturing,
+  inventory and accounting, all seamlessly integrated. It is the first time ever a software editor
+  managed to reach such a functional coverage.
+
+
+  Odoo is the most installed business software in the world. Odoo is used by 2.000.000 users worldwide
+  ranging from very small companies (1 user) to very large ones (300 000 users).
+  
+developer: Odoo SA
+website: https://www.odoo.com/
+submitter: DavidGarciaCat & HueViridian
+submission: https://github.com/odoo/odoo
+repo: https://github.com/deralia/umbrel-app-store
+support: https://github.com/deralia/umbrel-app-store/issues
+gallery:
+  - https://raw.githubusercontent.com/deralia/umbrel-app-store/master/deralia-odoo/assets/1.png
+  - https://raw.githubusercontent.com/deralia/umbrel-app-store/master/deralia-odoo/assets/2.png
+  - https://raw.githubusercontent.com/deralia/umbrel-app-store/master/deralia-odoo/assets/3.png
+dependencies: []
+path: ""
