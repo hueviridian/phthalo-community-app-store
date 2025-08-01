@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  bluesky-pds:
+    image: gravityfargo/bluesky-pds:latest
+    container_name: bluesky-pds
+    restart: unless-stopped
+    environment:
+      - PDS_HOSTNAME=bluesky.local      # Remplace par ton nom de domaine
+      - PDS_PORT=2583
+      - PDS_ADMIN_PASSWORD=umbrel       # Change le mot de passe
+      - PDS_JWT_SECRET=supersecretkey   # Change ce secret pour ta prod
+      - PDS_DID_PLCHLDR=https://plc.directory
+      - PDS_DB_LOCATION=/data/sqlite.db
+    ports:
+      - "2583:2583"
+    volumes:
+      - bluesky-data:/data
+
+volumes:
+  bluesky-data:
