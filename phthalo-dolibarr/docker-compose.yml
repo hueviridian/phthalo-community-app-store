@@ -19,7 +19,7 @@ services:
 
   dolibarr:
     container_name: dolibarr
-    image: dolibarr/dolibarr:21.0.2
+    image: dolibarr/dolibarr:latest
     restart: unless-stopped
     depends_on:
       - mariadb
