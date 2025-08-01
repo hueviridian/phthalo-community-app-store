@@ -19,3 +19,4 @@ I’m French, and translations are coming little by little. Any contribution to 
 | ⚠️ **Roundcube**        | Roundcube is a web-based IMAP email client |
 | ❌ **Akaunting**        | Open-source accounting for freelancers and companies |
 | ⚠️ **AMP**              | CubeCoders’ Application Management Panel for game servers |
+| ⚠️ **Bluesky PDS**      | Bluesky PDS (Personal Data Server) |
