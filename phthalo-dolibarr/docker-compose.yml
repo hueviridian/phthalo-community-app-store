@@ -1,34 +1,38 @@
 version: "3.7"
 
 services:
-  db:
-    image: mariadb:15  # ou 10.6 selon tes préférences
+  app_proxy:
     environment:
-      MYSQL_ROOT_PASSWORD: dolibarr_root
-      MYSQL_DATABASE: dolibarr
-      MYSQL_USER: dolibarr
-      MYSQL_PASSWORD: dolibase
-    volumes:
-      - dolibarr-db:/var/lib/mysql
+      APP_HOST: dolibarr
+      APP_PORT: 80
+
+  mariadb:
+    image: mariadb:10.9.4
     restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: dolibarr
+      MYSQL_USER: user
+      MYSQL_PASSWORD: root
+    volumes:
+      - db-data:/var/lib/mysql
 
   dolibarr:
-    image: dolibarr/dolibarr:latest
-    environment:
-      DOLI_DB_HOST: db
-      DOLI_DB_NAME: dolibarr
-      DOLI_DB_USER: dolibarr
-      DOLI_DB_PASSWORD: dolibase
-      DOLI_URL_ROOT: http://0.0.0.0  # pour que Dolibarr détecte correctement le réseau interne
-      PHP_INI_DATE_TIMEZONE: Europe/Paris
-    ports:
-      - "3002:80"  # tu peux ajuster le port hôte si besoin
+    container_name: dolibarr
+    image: dolibarr/dolibarr:21.0.2
+    restart: unless-stopped
     depends_on:
-      - db
+      - mariadb
+    environment:
+      DOLI_DB_HOST: mariadb
+      DOLI_DB_NAME: dolibarr
+      DOLI_DB_USER: user
+      DOLI_DB_PASSWORD: root
+    ports:
+      - "3002:80"
     volumes:
       - dolibarr-data:/var/www/html
-    restart: unless-stopped
 
 volumes:
-  dolibarr-db:
+  db-data:
   dolibarr-data:
