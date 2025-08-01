@@ -1,37 +1,42 @@
-version: "3.8"
+version: "3.7"
 
 services:
+  app_proxy:
+    environment:
+      APP_HOST: erpnext
+      APP_PORT: 8000
+
   mariadb:
     image: mariadb:10.5
+    restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: erpnext
       MYSQL_USER: erpnext
       MYSQL_PASSWORD: erpnextpassword
     volumes:
-      - erpnext_mariadb:/var/lib/mysql
-    restart: unless-stopped
+      - mariadb-data:/var/lib/mysql
 
   redis_cache:
     image: redis:6-alpine
     command: redis-server --appendonly yes
-    volumes:
-      - erpnext_redis_cache:/data
     restart: unless-stopped
+    volumes:
+      - redis-cache-data:/data
 
   redis_queue:
     image: redis:6-alpine
     command: redis-server --appendonly yes
-    volumes:
-      - erpnext_redis_queue:/data
     restart: unless-stopped
+    volumes:
+      - redis-queue-data:/data
 
   redis_socketio:
     image: redis:6-alpine
     command: redis-server --appendonly yes
-    volumes:
-      - erpnext_redis_socketio:/data
     restart: unless-stopped
+    volumes:
+      - redis-socketio-data:/data
 
   erpnext:
     image: frappe/erpnext:v15.72.2
@@ -49,17 +54,13 @@ services:
       REDIS_CACHE: redis_cache:6379
       REDIS_QUEUE: redis_queue:6379
       REDIS_SOCKETIO: redis_socketio:6379
-    volumes:
-      - erpnext_sites:/home/frappe/frappe-bench/sites
     restart: unless-stopped
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.erpnext.rule=Host(`erpnext.local.umbrel`) || PathPrefix(`/apps/erpnext`)"
-      - "traefik.http.services.erpnext.loadbalancer.server.port=8000"
+    volumes:
+      - erpnext-sites:/home/frappe/frappe-bench/sites
 
 volumes:
-  erpnext_mariadb:
-  erpnext_redis_cache:
-  erpnext_redis_queue:
-  erpnext_redis_socketio:
-  erpnext_sites:
+  mariadb-data:
+  redis-cache-data:
+  redis-queue-data:
+  redis-socketio-data:
+  erpnext-sites:
