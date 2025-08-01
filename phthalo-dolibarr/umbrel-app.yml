@@ -251,7 +251,7 @@ releaseNotes: >-
 
     Ergonomie : retour automatique à la vue d’édition après duplication, meilleur affichage des titres et boutons, suppression de caractères indésirables (&amp;, double logo, etc.).
 
-📚 Domaines concernés
+  📚 Domaines concernés
 
     💰 Comptabilité et gestion bancaire
 
@@ -269,9 +269,9 @@ releaseNotes: >-
 
     📊 Exports / API / Filtres
 
-💡 En résumé :
+  💡 En résumé :
 
-Cette version corrige des dizaines de petits bugs, souvent invisibles mais pénibles, surtout pour les utilisateurs en production. Elle prépare également la compatibilité complète avec les dernières versions de PHP et corrige de nombreux problèmes signalés par la communauté.
+  Cette version corrige des dizaines de petits bugs, souvent invisibles mais pénibles, surtout pour les utilisateurs en production. Elle prépare également la compatibilité complète avec les dernières versions de PHP et corrige de nombreux problèmes signalés par la communauté.
 dependencies: []
 path: ""
 defaultUsername: ""
