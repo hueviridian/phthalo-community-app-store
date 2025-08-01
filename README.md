@@ -18,4 +18,4 @@ I’m French, and translations are coming little by little. Any contribution to 
 | ⚠️ **Odoo**             | Complete business management suite |
 | ⚠️ **Roundcube**        | Roundcube is a web-based IMAP email client |
 | ❌ **Akaunting**        | Open-source accounting for freelancers and companies |
-| ⚠️ **AMP**              | CubeCoders’ Advanced Management Panel for game servers |
+| ⚠️ **AMP**              | CubeCoders’ Application Management Panel for game servers |
