@@ -13,7 +13,7 @@ services:
       - erpnext-db-data:/var/lib/mysql
 
   erpnext:
-    image: frappe/erpnext-worker:version-15
+    image: frappe/erpnext
     restart: unless-stopped
     depends_on:
       - mariadb
