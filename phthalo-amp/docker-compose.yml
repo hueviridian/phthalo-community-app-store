@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  amp:
+    image: mitchtalmadge/amp-dockerized:latest
+    container_name: amp
+    restart: unless-stopped
+    ports:
+      - "8080:8080"     # Port web AMP
+      - "25565:25565"   # Port Minecraft par défaut (adapter si tu utilises un autre jeu)
+    volumes:
+      - amp_data:/home/amp/.ampdata    # Données persistantes AMP
+    environment:
+      - TZ=Europe/Paris                 # Fuseau horaire, adapte-le
+      - AMP_USERNAME=admin              # User admin AMP (changer)
+      - AMP_PASSWORD=changeme           # Mot de passe (changer impérativement)
+      - AMP_HOST=0.0.0.0               # Ecoute sur toutes les interfaces
+    shm_size: '1gb'                    # Pour éviter certains problèmes mémoire
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  amp_data:
