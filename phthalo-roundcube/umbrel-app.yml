@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: phthalo-roundcube
+name: Roundcube
+tagline: Roundcube est un client de messagerie pour le protocole IMAP
+icon: https://cdn.octeth.com/wp-content/uploads/2024/11/roundcube-icon-2048x2048-eztx4bxm.png
+category: Networking
+version: "Latest"
+port: 8080
+description: >-
+  Roundcube est un client webmail open source puissant, moderne et convivial, qui te permet de gérer tes emails directement depuis ton navigateur. Facile à installer et à configurer, Roundcube supporte IMAP, SMTP, carnet d’adresses, filtres, recherches, et bien plus.
+  
+developer: The Roundcube Team
+website: https://roundcube.net/
+submitter: HueViridian
+submission: https://github.com/roundcube/roundcubemail
+repo: https://github.com/roundcube/roundcubemail
+support: https://github.com/roundcube/roundcubemail/issues
+gallery:
+  - https://assets-eu-01.kc-usercontent.com/5a869490-919a-0159-3da4-b8c3c397c0bc/6b45e442-7ff1-4dd0-ace0-a8da528b330b/cover-988b28ce-ef35-40e3-82bb-88a862eb6fc6_roundcube.png
+  - https://nextcloud.com/c/uploads/2024/07/nextcloud-roundcube-preview.png
+  - https://community.opalstack.com/assets/files/2023-03-08/1678289981-859916-roundcube.png
+dependencies: []
+path: ""
