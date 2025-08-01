@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: phthalo-amp
+name: Application Management Panel
+tagline: CubeCoders AMP. Manage servers like Minecraft, TF2, and more.
+icon: https://styles.redditmedia.com/t5_2rjge/styles/communityIcon_jgl9zq94d4u31.png
+category: Networking
+version: "Latest"
+port: 8080
+description: >-
+  In a nutshell, AMP (Application Management Panel) allows you to manage one or more game servers from a web UI.
+
+developer: CubeCoders
+website: https://cubecoders.com/AMP
+submitter: HueViridian
+support: https://discourse.cubecoders.com/
+gallery:
+  - https://cubecoders.com/assets/images/amp_social.png
+  - https://discourse.cubecoders.com/uploads/default/original/2X/b/b14e29af3a7bf2295a81b51031c9b6bfa3dcb2eb.png
+  - https://techteamgb.co.uk/wp-content/uploads/2021/02/luca_dashboard-e1613398295460.png
+dependencies: []
+path: ""
+defaultUsername: "admin"
+defaultPassword: "changeme"
