@@ -1,72 +1,16 @@
 version: "3.7"
 
 services:
-  # Proxy service to route traffic to the ERPNext app
-  app_proxy:
-    environment:
-      APP_HOST: erpnext
-      APP_PORT: 8000
-
-  # MariaDB database for ERPNext
-  mariadb:
-    image: mariadb:10.5
-    restart: unless-stopped
-    environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: erpnext
-      MYSQL_USER: erpnext
-      MYSQL_PASSWORD: erpnextpassword
-    volumes:
-      - mariadb-data:/var/lib/mysql
-
-  # Redis cache for ERPNext
-  redis_cache:
-    image: redis:6-alpine
-    command: redis-server --appendonly yes
-    restart: unless-stopped
-    volumes:
-      - redis-cache-data:/data
-
-  # Redis queue for ERPNext
-  redis_queue:
-    image: redis:6-alpine
-    command: redis-server --appendonly yes
-    restart: unless-stopped
-    volumes:
-      - redis-queue-data:/data
-
-  # Redis socketio for ERPNext
-  redis_socketio:
-    image: redis:6-alpine
-    command: redis-server --appendonly yes
-    restart: unless-stopped
-    volumes:
-      - redis-socketio-data:/data
-
-  # ERPNext main application
   erpnext:
-    image: frappe/erpnext:latest
-    depends_on:
-      - mariadb
-      - redis_cache
-      - redis_queue
-      - redis_socketio
-    environment:
-      SITE_NAME: erp.example.com
-      DB_ROOT_USER: root
-      MYSQL_ROOT_PASSWORD: rootpassword
-      ADMIN_PASSWORD: admin123
-      INSTALL_APPS: erpnext
-      REDIS_CACHE: redis_cache:6379
-      REDIS_QUEUE: redis_queue:6379
-      REDIS_SOCKETIO: redis_socketio:6379
-    restart: unless-stopped
+    image: frappe/erpnext  # image officielle ERPNext
+    restart: always
     volumes:
-      - erpnext-sites:/home/frappe/frappe-bench/sites
-
-volumes:
-  mariadb-data:
-  redis-cache-data:
-  redis-queue-data:
-  redis-socketio-data:
-  erpnext-sites:
+      - ${APP_DATA_DIR}/sites:/home/frappe/frappe-bench/sites
+      - ${APP_DATA_DIR}/logs:/home/frappe/frappe-bench/logs
+    ports:
+      - "8000:8000"  # Port web d'ERPNext
+    environment:
+      SITE_NAME: site1.local
+      DB_ROOT_USER: root
+      MYSQL_ROOT_PASSWORD: erpnext-56881-vllkg  # change le !
+      ADMIN_PASSWORD: admin_password_12898hg58fdgh2g855gthgsm          # change le aussi !
