@@ -1,0 +1,21 @@
+manifestVersion: 1
+id: phthalo-bluesky
+name: Bluesky PDS
+tagline: Bluesky PDS (Personal Data Server)
+icon: https://ps.w.org/social-integration-for-bluesky/assets/icon.svg?rev=3214198
+category: Networking
+version: "Latest"
+port: 2583
+description: >-
+  Self-hosting a Bluesky PDS means running your own Personal Data Server that is capable of federating with the wider Bluesky social network.
+
+developer: Bluesky Social PBC
+website: https://bsky.social/
+submitter: HueViridian
+submission: https://github.com/bluesky-social
+repo: https://github.com/bluesky-social
+gallery:
+  - https://hyprlab.co/content/images/size/w1200/2024/11/featured_bluesky-pds.jpg
+  - https://outilstice.com/wp-content/uploads/2024/11/bluesky.jpg.webp
+dependencies: []
+path: ""
