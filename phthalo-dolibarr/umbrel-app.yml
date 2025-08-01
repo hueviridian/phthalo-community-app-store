@@ -4,7 +4,7 @@ name: Dolibarr
 tagline: ERP & CRM open-source pour PME
 icon: https://www.dolibarr.org/medias/image/www.dolibarr.org/images/stories/dolibarr_256x256.png
 category: Finance
-version: "0.1.1"
+version: "21.0.2"
 port: 4000
 description: ERP & CRM open-source pour PME
 developer: Dolibarr Team
