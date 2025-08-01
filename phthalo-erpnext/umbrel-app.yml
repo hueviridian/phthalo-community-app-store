@@ -5,7 +5,7 @@ tagline: L’ERP moderne, open source et sur mesure
 icon: https://pbs.twimg.com/profile_images/1770789781900800000/oP7eDF2A_400x400.jpg
 category: Finance
 version: "15.72.2"
-port: 8880
+port: 8000
 description: >-
   ERPNext est une solution ERP open source complète et flexible, conçue pour aider les entreprises à gérer efficacement tous leurs processus métier — de la comptabilité, la gestion des stocks, la production, la relation client (CRM), aux ressources humaines et plus encore. Facile à déployer et à personnaliser, ERPNext centralise vos données et automatise vos tâches pour vous faire gagner du temps et améliorer votre productivité. Que vous soyez une PME ou une grande organisation, ERPNext s’adapte à vos besoins pour vous offrir un contrôle total sur votre activité, sans coût de licence prohibitif.
 
