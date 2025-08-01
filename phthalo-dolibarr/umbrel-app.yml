@@ -3,4 +3,30 @@ name: Dolibarr
 description: ERP & CRM open-source pour PME
 author: Dolibarr Team
 repository: https://github.com/Dolibarr/dolibarr-docker
+icon: 
+
+manifestVersion: 1
+id: phthalo-dolibarr
+name: Dolibarr
+tagline: Replace this tagline with your app's tagline
 icon: https://raw.githubusercontent.com/YunoHost-Apps/dolibarr_ynh/master/logo.png
+category: Finance
+version: "0.1.1"
+port: 4000
+description: ERP & CRM open-source pour PME
+developer: Dolibarr Team
+website: https://www.dolibarr.org/
+submitter: HueViridian
+submission: https://github.com/getumbrel/umbrel-hello-world-app
+repo: https://github.com/getumbrel/umbrel-hello-world-app
+support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
