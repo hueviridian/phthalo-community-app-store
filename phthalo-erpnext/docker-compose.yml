@@ -31,7 +31,8 @@ services:
       - "8000:8000"
     volumes:
       - erpnext-sites:/home/frappe/frappe-bench/sites
-    entrypoint: ["/entrypoint.sh"]
+    command: >
+      bash -c "bench new-site erp.example.com --db-name erpnext --db-password erpnextpassword --admin-password admin123 --no-mariadb-socket && bench start"
 
 volumes:
   erpnext-db-data:
