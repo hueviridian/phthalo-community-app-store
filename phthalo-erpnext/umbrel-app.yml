@@ -4,7 +4,7 @@ name: ERPNext
 tagline: L’ERP moderne, open source et sur mesure
 icon: https://pbs.twimg.com/profile_images/1770789781900800000/oP7eDF2A_400x400.jpg
 category: Finance
-version: "15.72.2"
+version: "Latest"
 port: 8000
 description: >-
   ⚠️ Disclaimer :
