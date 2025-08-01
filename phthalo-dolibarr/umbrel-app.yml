@@ -1,8 +1,8 @@
 manifestVersion: 1
 id: phthalo-dolibarr
 name: Dolibarr
-tagline: Replace this tagline with your app's tagline
-icon: https://raw.githubusercontent.com/YunoHost-Apps/dolibarr_ynh/master/logo.png
+tagline: ERP & CRM open-source pour PME
+icon: https://www.dolibarr.org/medias/image/www.dolibarr.org/images/stories/dolibarr_256x256.png
 category: Finance
 version: "0.1.1"
 port: 4000
