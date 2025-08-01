@@ -1,16 +1,21 @@
 ## Phthalo's Community App Store - Umbrel
 
-Bienvenue dans mon App Store communautaire pour Umbrel, conçu pour ajouter des **applications professionnelles** centrées sur la gestion d'entreprise, l'auto-hébergement, les ERP, et les panels de contrôle.
+Welcome to my community App Store for Umbrel, designed to add **professional applications** focused on business management, self-hosting, ERPs, and control panels.
+
+I’m French, and translations are coming little by little. Any contribution to improve this collection is more than welcome!
+
+⚠️ Still in early development - Things don't work well.
 
 ---
 
-## 📦 Applications incluses
+## 📦 Included Applications
 
-| Nom de l'application | Description |
+| App name | Description |
 |----------------------|-------------|
-| ✔️ **Dolibarr**         | ERP & CRM open-source pour les PME |
-| ✔️ **ERPNext**          | L’ERP moderne, open source et sur mesure |
-| ✔️ **Pterodactyl**      | Pterodactyl le panneau de contrôle de serveurs vidéoludiques |
-| ❌ **Odoo**             | Suite complète de gestion d'entreprise |
-| ❌ **Akaunting**        | Comptabilité open-source pour freelances et entreprises |
-| ❌ **AMP**              | Advanced Management Panel de CubeCoders pour serveurs de jeu |
+| ✔️ **Dolibarr**         | Open-source ERP & CRM for small and medium businesses |
+| ⚠️ **ERPNext**          | Modern, open-source, and customizable ERP |
+| ⚠️ **Pterodactyl**      | Pterodactyl game server management panel |
+| ⚠️ **Odoo**             | Complete business management suite |
+| ⚠️ **Roundcube**        | Roundcube is a web-based IMAP email client |
+| ❌ **Akaunting**        | Open-source accounting for freelancers and companies |
+| ❌ **AMP**              | CubeCoders’ Advanced Management Panel for game servers |
