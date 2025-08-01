@@ -39,7 +39,7 @@ services:
       - redis-socketio-data:/data
 
   erpnext:
-    image: frappe/erpnext:v15.72.2
+    image: frappe/erpnext:latest
     depends_on:
       - mariadb
       - redis_cache
