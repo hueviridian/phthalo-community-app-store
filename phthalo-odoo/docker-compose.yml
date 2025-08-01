@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  postgresql:
+    image: bitnami/postgresql:15
+    container_name: odoo-postgresql
+    environment:
+      - POSTGRESQL_USERNAME=odoo
+      - POSTGRESQL_PASSWORD=odoo_password
+      - POSTGRESQL_DATABASE=bitnami_odoo
+    volumes:
+      - postgresql_data:/bitnami/postgresql
+    networks:
+      - odoo-net
+
+  odoo:
+    image: bitnami/odoo:18
+    container_name: odoo
+    environment:
+      - ODOO_DATABASE_USER=odoo
+      - ODOO_DATABASE_PASSWORD=odoo_password
+      - ODOO_DATABASE_NAME=bitnami_odoo
+      - ODOO_USERNAME=admin
+      - ODOO_PASSWORD=admin_password
+      - ALLOW_EMPTY_PASSWORD=no
+    ports:
+      - '8069:8069'
+    depends_on:
+      - postgresql
+    volumes:
+      - odoo_data:/bitnami/odoo
+    networks:
+      - odoo-net
+
+volumes:
+  postgresql_data:
+    driver: local
+  odoo_data:
+    driver: local
+
+networks:
+  odoo-net:
+    driver: bridge
