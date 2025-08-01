@@ -1,0 +1,6 @@
+version: "0.1.1"
+name: Dolibarr
+description: ERP & CRM open-source pour PME
+author: Dolibarr Team
+repository: https://github.com/Dolibarr/dolibarr-docker
+icon: https://raw.githubusercontent.com/YunoHost-Apps/dolibarr_ynh/master/logo.png
