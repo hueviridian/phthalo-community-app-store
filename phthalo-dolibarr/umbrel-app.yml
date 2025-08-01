@@ -14,8 +14,9 @@ submission: https://github.com/getumbrel/umbrel-hello-world-app
 repo: https://github.com/getumbrel/umbrel-hello-world-app
 support: https://github.com/getumbrel/umbrel-hello-world-app/issues
 gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://independant.io/wp-content/uploads/dolibarr_logo.png
+  - https://upload.wikimedia.org/wikipedia/commons/c/c1/Dolibarr.jpg
+  - https://gcs.nc/uploads/images/dolibarr.jpg
   - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
   Add what's new in the latest version of your app here.
