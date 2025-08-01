@@ -21,4 +21,4 @@ gallery:
   - https://gdm-catalog-fmapi-prod.imgix.net/ProductScreenshot/211ed2fd-919a-4d7f-9d17-759a8f30998d.png?auto=format&q=50
   - https://erpnext.ma/wp-content/uploads/2024/08/gestion-utilisateurs-erpnext.png
 dependencies: []
-path: ""
+path: "."
