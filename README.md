@@ -8,8 +8,7 @@ Bienvenue dans mon App Store communautaire pour Umbrel, conçu pour ajouter des 
 
 | Nom de l'application | Description |
 |----------------------|-------------|
-| **Dolibarr**         | ERP & CRM open-source pour les PME |
-| **Odoo**             | Suite complète de gestion d'entreprise |
-| **Akaunting**        | Comptabilité open-source pour freelances et entreprises |
-| **Pterodactyl** ⚠️   | Panel de gestion de serveurs de jeu (installation avancée) |
-| **AMP**              | Advanced Management Panel de CubeCoders pour serveurs de jeu |
+| ✔️ **Dolibarr**         | ERP & CRM open-source pour les PME |
+| ❌ **Odoo**             | Suite complète de gestion d'entreprise |
+| ❌ **Akaunting**        | Comptabilité open-source pour freelances et entreprises |
+| ❌ **AMP**              | Advanced Management Panel de CubeCoders pour serveurs de jeu |
