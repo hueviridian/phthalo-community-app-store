@@ -1,0 +1,37 @@
+version: "3.7"
+services:
+  mariadb:
+    image: mariadb:10.5
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_USER: erpnext
+      MYSQL_PASSWORD: erpnextpassword
+      MYSQL_DATABASE: erpnext
+    volumes:
+      - erpnext-db-data:/var/lib/mysql
+
+  erpnext:
+    image: frappe/erpnext-worker:version-15
+    restart: unless-stopped
+    depends_on:
+      - mariadb
+    environment:
+      SITE_NAME: erp.local
+      DB_HOST: mariadb
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_USER: erpnext
+      MYSQL_PASSWORD: erpnextpassword
+      MYSQL_DATABASE: erpnext
+      ADMIN_PASSWORD: admin123
+      INSTALL_APPS: erpnext
+    ports:
+      - "8000:8000"
+    volumes:
+      - erpnext-sites:/home/frappe/frappe-bench/sites
+    command: >
+      bash -c "bench new-site erp.local --db-name erpnext --db-password erpnextpassword --admin-password admin123 --no-mariadb-socket && bench start"
+
+volumes:
+  erpnext-db-data:
+  erpnext-sites:
