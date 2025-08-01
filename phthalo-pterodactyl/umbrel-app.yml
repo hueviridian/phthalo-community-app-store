@@ -1,0 +1,35 @@
+manifestVersion: 1
+id: phthalo-pterodactyl
+name: Pterodactyl
+tagline: Pterodactyl est un panneau de contrôle de serveurs vidéoludiques
+icon: https://cdn.theorg.com/20c66ae1-5dc1-45fb-85e0-662264d37ffb_small.jpg
+category: Networking
+version: "Latest"
+port: 8080
+description: >-
+  ⚠️ Pour que Wings fonctionne sur Umbrel :
+
+    Dans le panel Pterodactyl (sur Umbrel), crée un Node avec l’IP locale d’Umbrel.
+
+    Génère un token Wings dans la page du Node.
+
+    Dans le fichier docker-compose.yml, remplace WINGS_TOKEN par ce token et WINGS_PANEL par l’URL locale (ex : http://umbrel.local:8080).
+
+    Wings doit tourner en mode network host (dans docker-compose) pour ouvrir les ports des serveurs.
+
+    Vérifie que Wings a accès au socket Docker (/var/run/docker.sock).
+
+  Sans ça, Wings ne pourra pas lancer ni gérer tes serveurs de jeux sur Umbrel.
+
+developer: Pterodactyl
+website: https://pterodactyl.io/
+submitter: HueViridian
+submission: https://pterodactyl.io/
+repo: https://github.com/pterodactyl/panel
+support: https://github.com/pterodactyl/panel/issues
+gallery:
+  - https://www.security.land/wp-content/uploads/2025/06/Pterodactyl-Panel-logo-on-digital-background.webp
+  - https://pterodactyl.io/assets/img/pterodactyl_add_node_create_button.05642c32.png
+  - https://store-images.s-microsoft.com/image/apps.9754.955d28c9-6c9e-4d1c-b9f6-6e04fd4bf43c.b4e7e7df-725d-4c62-af1a-c91e8e35e3b9.83978def-ca13-4d73-b505-5f31fdc8513f
+dependencies: []
+path: ""
