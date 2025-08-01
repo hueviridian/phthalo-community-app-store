@@ -5,4 +5,8 @@ apps:
     name: Dolibarr
     description: ERP & CRM pour PME
     path: phthalo-dolibarr
+  - id: phthalo-erpnext
+    name: ERPNext
+    description: L’ERP moderne, open source et sur mesure
+    path: phthalo-erpnext
   # ajoute les autres apps ici
