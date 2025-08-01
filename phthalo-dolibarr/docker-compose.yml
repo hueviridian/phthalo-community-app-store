@@ -18,7 +18,6 @@ services:
       - db-data:/var/lib/mysql
 
   dolibarr:
-    container_name: dolibarr
     image: dolibarr/dolibarr:latest
     restart: unless-stopped
     depends_on:
@@ -28,8 +27,6 @@ services:
       DOLI_DB_NAME: dolibarr
       DOLI_DB_USER: user
       DOLI_DB_PASSWORD: root
-    ports:
-      - "3002:80"
     volumes:
       - dolibarr-data:/var/www/html
 
