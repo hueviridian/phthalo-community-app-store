@@ -12,9 +12,9 @@ description: >-
 developer: Frappe Technologies Pvt. Ltd. and Community
 website: https://frappe.io/erpnext
 submitter: HueViridian
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+submission: https://github.com/frappe/erpnext
+repo: https://github.com/frappe/erpnext
+support: https://github.com/frappe/erpnext/issues
 gallery:
   - https://beverensoftware.com/wp-content/uploads/2024/05/rgn-1-1024x659.webp
   - https://gdm-catalog-fmapi-prod.imgix.net/ProductScreenshot/ea82dfb0-1a69-4ea9-8790-b8a04b41f054.png
